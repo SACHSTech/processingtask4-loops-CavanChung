@@ -26,11 +26,11 @@ public class Sketch extends PApplet {
     //Quad 2 - Nested loop, draws a 5 rows of 5 circles
     for (int circleY = height / 2 / 6; circleY <= height / 2 - (height / 2 / 6); circleY += height / 2 / 6) {
       for (int circleX = (width / 2) + width / 2 / 6; circleX <= width - (width / 2 / 6); circleX += width / 2 / 6) {
-        fill(231, 84, 128);
+        fill(255, 255, 224);
         ellipse(circleX, circleY, 20, 20);
       }
     }
-    //Quad 3 - line colour and location is added by plus one every loop and stops at half the window size
+    //Quad 3 - line colour and location is added by plus one every loop and stops at half the window size. This will create a gradual colour change from left to right.
     for (int lineX = 0; lineX <= width/2; lineX++) {
         line(lineX, height/2, lineX, height);  
         stroke(lineX);
@@ -45,7 +45,7 @@ public class Sketch extends PApplet {
       fill(255, 255, 224);
       ellipse(0, 0, width/20, height/3);  
     }
-    fill(0, 0, 0);
-    ellipse(0, 0, width/6, height/6);
+      fill(0, 0, 0);
+      ellipse(0, 0, width/6, height/6);
     }
   }
